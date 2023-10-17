@@ -5,3 +5,18 @@
             }
     }
 ?>
+
+<?php
+public function display($content='home'){
+// note the default value
+if(!file_exists('application/views/'.$content.'.php')){
+// Whoops , we don 't have a page for that !
+show_404();
+}
+$data['content']=$content;
+// $data is 'extracted ' and its compenents has a global access
+$this->load->vars($data);
+// Load a generic page
+$this->load->view('template');
+}
+?>
