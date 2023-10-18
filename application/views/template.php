@@ -2,18 +2,18 @@
     <html>
     <head>
         <meta charset="utf-8"/>
-        <title> <?php echo $content;?> - CodeIgniter 3 Tutorial </title>
+        <title> <?php echo $content;?> - Ajouter un produit </title>
     </head>
     <body>
         <div id="global">
         <div id="entete">
-        <h1> CodeIgniter 3 Tutorial </h1>
+        <h1> Ajout d'un produit </h1>
         </div><!-- # entete -->
         <div id="contenu">
         <?php $this->load->view($content);?>
         </div><!-- # contenu -->
         <div id="pied">
-        <strong>&copy;2021</strong>
+        <strong>&copy;2023</strong>
         </div><!--#pied-->
         </div><!--#global-->
     </body>
