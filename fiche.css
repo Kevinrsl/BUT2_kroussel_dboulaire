@@ -4,12 +4,120 @@ body {
     padding: 0;
 }
 
+@font-face {
+    font-family: "Inter";
+    src:
+      url("./typos/Inter-Bold.ttf") format('truetype')
+  }
+  
+@font-face {
+    font-family: "Neuton";
+    src:
+      url("./typos/Neuton-ExtraLight.ttf") format('truetype')
+  }
+
+
+/* Styles pour la barre de navigation */
+body {
+    margin: 0; /* Supprimer la marge par défaut du corps de la page */
+    padding: 0;
+    font-family: 'Neuton';
+}
+
+.navbar {
+    background-color: #fdfdfd; /* Couleur de fond de la navbar */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre en bas de la navbar */
+    font-family: 'Inter';
+
+}
+
+/* Styles pour la partie supérieure de la navbar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-height: 50px; /* Ajustez la taille du logo selon vos besoins */
+}
+
+.search-bar {
+    background-color: rgba(0, 212, 153, 0.2);
+    border-radius: 20px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 80px; /* Marge entre les icônes et le bloc de recherche */
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 212, 153, 0.01);
+    border-radius: 5px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    margin: 0 5px; /* Marge entre le bouton et le champ de recherche */
+}
+
+.search-button img {
+    max-height: 20px; /* Ajustez la taille de l'icône de loupe selon vos besoins */
+}
+
+.icons img {
+    max-height: 40px; /* Ajustez la taille des icônes selon vos besoins */
+    padding: 15px;
+    padding-right: 40px;
+}
+
+/* Styles pour la partie inférieure de la navbar */
+.bottom-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.category {
+    text-align: center;
+}
+
+.category img {
+    max-height: 50px; /* Ajustez la taille des icônes de catégorie selon vos besoins */
+}
+
+.category p {
+    margin: 5px 0;
+    color: #5f708a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
     display: flex;
     justify-content: space-between;
     padding-right: 5rem;
     padding-left: 5rem;
-    padding-top: 2rem;
+    padding-top: 15rem;
 }
 
 .left-section {
