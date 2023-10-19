@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 0 0 70%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-photos {
+    position: relative;
+}
+
+.main-photo {
+    width: 70%;
+}
+
+.secondary-photo {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 70%;
+}
+
+.view-photos-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #058C42;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-title {
+    color: #5F708A;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.product-price {
+    color: #5F708A;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-description {
+    color: #5F708A;
+    margin-top: 20px;
+}
+
+.right-section {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-card {
+    text-align: center;
+    padding: 20px;
+}
+
+.user-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.user-name {
+    color: #5F708A;
+    font-size: 18px;
+}
+
+.rating {
+    /* Styles pour les étoiles cliquables */
+}
+
+.contact-button, .rent-button {
+    background-color: #058C42;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.round-button {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    background-color: #058C42;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
