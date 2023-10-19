@@ -5,11 +5,13 @@ body {
 }
 
 .navbar {
-    background-color: #333; /* Couleur de fond de la navbar */
+    background-color: #fdfdfd; /* Couleur de fond de la navbar */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre en bas de la navbar */
+
 }
 
 /* Styles pour la partie supérieure de la navbar */
@@ -25,18 +27,20 @@ body {
 }
 
 .search-bar {
+    background-color: rgba(0, 212, 153, 0.2);
+    border-radius: 5px;
     flex: 1;
     display: flex;
     align-items: center;
-    background-color: #555;
-    border-radius: 5px;
-    margin: 0 10px; /* Marge entre les icônes et le bloc de recherche */
+    margin: 0 80px; /* Marge entre les icônes et le bloc de recherche */
 }
 
 .search-bar input {
     flex: 1;
     padding: 5px;
     border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 212, 153, 0.01);
     border-radius: 5px;
 }
 
@@ -52,6 +56,7 @@ body {
 
 .icons img {
     max-height: 30px; /* Ajustez la taille des icônes selon vos besoins */
+    padding: 15px;
 }
 
 /* Styles pour la partie inférieure de la navbar */
@@ -71,7 +76,5 @@ body {
 
 .category p {
     margin: 5px 0;
-    color: white;
+    color: #011936;
 }
-
-/* --------------------------------------------------------------------------------------------------------------------------------- */
