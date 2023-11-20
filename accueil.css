@@ -71,8 +71,8 @@ body {
 }
 
 .icons img {
-    max-height: 40px; /* Ajustez la taille des icônes selon vos besoins */
-    padding: 15px;
+    max-height: 33px; /* Ajustez la taille des icônes selon vos besoins */
+    padding: 5px;
     padding-right: 40px;
 }
 
@@ -80,7 +80,7 @@ body {
 .bottom-bar {
     display: flex;
     justify-content: space-around;
-    padding: 10px 0;
+    padding: 2px 0;
 }
 
 .category {
@@ -88,10 +88,15 @@ body {
 }
 
 .category img {
-    max-height: 50px; /* Ajustez la taille des icônes de catégorie selon vos besoins */
+    max-height: 40px; /* Ajustez la taille des icônes de catégorie selon vos besoins */
 }
 
 .category p {
     margin: 5px 0;
+    color: #5f708a;
+}
+
+.category a {
+    text-decoration: none;
     color: #5f708a;
 }
