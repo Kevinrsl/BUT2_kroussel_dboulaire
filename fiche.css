@@ -121,6 +121,7 @@ body {
 }
 
 .left-section {
+    border-radius: 1rem;
     flex: 0 0 65%;
     padding: 20px;
     background-color: #ffffff;
@@ -183,6 +184,7 @@ body {
 
 
 .right-section {
+    border-radius: 1rem;
     flex: 0 0 30%;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -206,7 +208,7 @@ body {
 }
 
 .rating {
-    /* Styles pour les étoiles cliquables */
+    color: black;
 }
 
 .rent-button {
