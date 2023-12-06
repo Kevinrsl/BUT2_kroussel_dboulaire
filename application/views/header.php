@@ -40,7 +40,7 @@
                     </a>
                 </div>
                 <div class="category">
-                    <a href="catalogue-tapis.html">
+                    <a href="http://localhost/BUT2_kroussel_dboulaire/application/views/catalogue-sante.php">
                         <img src="../img/tapis.svg" alt="Tapis de course">
                         <p>Tapis de course</p>
                     </a>

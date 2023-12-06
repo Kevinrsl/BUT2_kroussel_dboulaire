@@ -11,6 +11,14 @@ class Welcome extends CI_Controller {
 	}
 
 
+
+
+
+/* 
+	function catalogue_sante(){
+		parent::construct();
+	} */
+
 	public function catalogue_sante()
 	{
 		$this->load->view('header');
