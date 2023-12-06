@@ -2,13 +2,13 @@
 @font-face {
     font-family: "Inter";
     src:
-      url("./typos/Inter-Bold.ttf") format('truetype')
+      url("../typos/Inter-Bold.ttf") format('truetype')
   }
   
 @font-face {
     font-family: "Neuton";
     src:
-      url("./typos/Neuton-ExtraLight.ttf") format('truetype')
+      url("../typos/Neuton-ExtraLight.ttf") format('truetype')
   }
 
 
