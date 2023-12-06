@@ -11,6 +11,11 @@ class Welcome extends CI_Controller {
 	}
 
 
+	public function catalogue_sante()
+	{
+		$this->load->view('header');
+		$this->load->view('catalogue-sante');
+	}
 
 
 }

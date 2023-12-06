@@ -34,7 +34,7 @@
             </div>
             <div class="bottom-bar">
                 <div class="category">
-                    <a href="catalogue-santé.html">
+                    <a href="catalogue-sante.php">
                         <img src="../img/sante.svg" alt="Santé">
                         <p>Santé</p>
                     </a>
