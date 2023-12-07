@@ -3,27 +3,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-	
-	public function index()
-	{
-		$this->load->view('header');
-		$this->load->view('accueil');
-	}
+   public function __construct() {
+      parent::__construct();
+      $this->load->helper('url');
+   }
 
+   public function index() {
+      $this->load->view('header');
+      $this->load->view('accueil');
+   }
 
+   public function catalogue_sante() {
+      $this->load->view('catalogue_sante');
+   }
 
-
-
-/* 
-	function catalogue_sante(){
-		parent::construct();
-	} */
-
-	public function catalogue_sante()
-	{
-		$this->load->view('header');
-		$this->load->view('catalogue-sante');
-	}
-
-
+   public function catalogue_tapis() {
+      $this->load->view('catalogue-tapis');
+   }
 }

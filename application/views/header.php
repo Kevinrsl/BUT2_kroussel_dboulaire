@@ -34,13 +34,13 @@
             </div>
             <div class="bottom-bar">
                 <div class="category">
-                    <a href="catalogue-sante.php">
-                        <img src="../img/sante.svg" alt="Santé">
+                    <a href="<?php echo base_url() ?>/application/views/catalogue_sante.php">
+                        <img src="<?= base_url('img/sante.svg'); ?>" alt="Santé">
                         <p>Santé</p>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="http://localhost/BUT2_kroussel_dboulaire/application/views/catalogue-sante.php">
+                    <a href="catalogue-tapis.php">
                         <img src="../img/tapis.svg" alt="Tapis de course">
                         <p>Tapis de course</p>
                     </a>
