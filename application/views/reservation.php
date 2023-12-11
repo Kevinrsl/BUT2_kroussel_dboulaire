@@ -9,9 +9,6 @@
 </head>
 <body>
 
-
-
-
     <div class="progress-bar">
         <div class="step completed">
             <span class="step-number">1</span>
