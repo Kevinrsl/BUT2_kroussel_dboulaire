@@ -4,13 +4,15 @@
             parent::__construct();
             $this->load->database();
         }
+
+        public function get_produits(){
+            $query=$this->db->get('produit');
+            return $query->result_array();
+            }
     }
 
 
-    function get_produit(){
-        $query=$this->db->get('produit');
-        return $query->result_array();
-        }
+
         
         function add_produit($id,$type,$description,$marque,$modele,$prix_location,$etat){
             $data=array(

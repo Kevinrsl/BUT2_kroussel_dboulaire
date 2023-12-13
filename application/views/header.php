@@ -34,8 +34,8 @@
             </div>
             <div class="bottom-bar">
                 <div class="category">
-                    <a href="<?php echo base_url() ?>/application/views/catalogue_sante.php">
-                        <img src="<?= base_url('img/sante.svg'); ?>" alt="Santé">
+                    <a href="catalogue_sante.php">
+                        <img src="../img/sante.svg" alt="Santé">
                         <p>Santé</p>
                     </a>
                 </div>

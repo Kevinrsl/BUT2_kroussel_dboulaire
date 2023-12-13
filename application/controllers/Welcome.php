@@ -7,30 +7,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Welcome extends CI_Controller {
 
-   public function __construct() {
+   public function __construct(){
       parent::__construct();
-      $this->load->helper('url');
-   }
+      $this->load->model('Internships_model');
+  }
 
-   public function index() {
+
+   public function index(){
+
+
       $this->load->view('header');
-      $this->load->view('accueil');
+      $data['produitlist']=$this->Internships_model->get_produits();
+      // a title to display above the list
+      $data['title']='home';
+      // template will call 'task_list ' sub - view
+      $data['content']='produit_list';
+      $this->load->vars($data );
+      $this->load->view('home');
+      }
 
-
-/* 	$model_location = new LocationModel();
-
-	$donnees = ['id' => 1, 'prix_total' => 100, 'utilisateur_id' => 1, 'produit_id' => 1];
-	 $model_location -> insert($donnees);
- */
-
-	  $this->load->view('test');
-   }
-
-   public function catalogue_sante() {
-      $this->load->view('catalogue_sante');
-   }
-
-   public function catalogue_tapis() {
-      $this->load->view('catalogue-tapis');
-   }
 }
