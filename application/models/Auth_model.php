@@ -20,4 +20,17 @@ class Auth_model extends CI_Model {
             return false;
         }
     }
+
+
+    public function get_last_user_id() {
+        $this->db->select_max('id');
+        $query = $this->db->get('utilisateur');
+        
+        return $query->row()->id;
+    }
+
+    public function register_user($data) {
+        $this->db->insert('utilisateur', $data);
+    }
+
 }

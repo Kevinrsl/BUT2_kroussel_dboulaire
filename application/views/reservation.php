@@ -3,7 +3,7 @@
   <head>
     <title> PAIEMENT </title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="test3.css" />
+    <link rel="stylesheet" href="http://localhost/BUT2_kroussel_dboulaire/CSS/reservation.css" />
   </head>
   <body>
     <div class="reservation">

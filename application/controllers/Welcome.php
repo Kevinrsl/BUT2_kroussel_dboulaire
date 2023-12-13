@@ -14,18 +14,31 @@ class Welcome extends CI_Controller {
 
 
    public function index(){
-
-
       $this->load->view('header');
-/*       $data['produitlist']=$this->Internships_model->get_produits();
+
+
+      $data['produitlist']=$this->Internships_model->get_produits();
       $data['title']='home';
       $data['content']='produit_list';
       $this->load->vars($data );
-      $this->load->view('home'); */
+      $this->load->view('catalogue'); 
 
 
-      $this->load->view('connexion');
+      /* $this->load->view('accueil'); */
+
+
+      
       }
+
+      public function produit_details($produit_id){
+         $data['produit'] = $this->Internships_model->get_produit_details($produit_id);
+         $data['title'] = 'Détails du produit';
+         $data['content'] = 'produit_details'; 
+         $this->load->vars($data);
+         $this->load->view('produit_details');
+         
+         
+     }
 
 
 }

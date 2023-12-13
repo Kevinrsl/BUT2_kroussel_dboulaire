@@ -26,6 +26,9 @@
                 <span class="forgot-password">Mot de passe oublié?</span>
             </div>
 
+      
+            <a href="<?= site_url('auth/register'); ?>">Pas encore inscrit? Inscrivez-vous ici</a>
+
             <div class="buttons">
                 <button class="login-btn" type="submit">Connexion</button>
             </div>

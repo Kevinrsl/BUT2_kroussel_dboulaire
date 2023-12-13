@@ -21,7 +21,8 @@ body {
 
 .navbar {
     background-color: #fdfdfd; /* Couleur de fond de la navbar */
-    position: fixed;
+    position: relative;
+    margin-bottom: 100px;
     top: 0;
     width: 100%;
     z-index: 1;
