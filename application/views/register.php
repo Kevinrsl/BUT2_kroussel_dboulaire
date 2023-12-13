@@ -11,7 +11,7 @@
 
 <body>
     <div class="register-container">
-        <form action="<?= base_url('index.php/auth/index'); ?>" method="post">
+        <form action="<?= base_url('index.php/auth/register_user'); ?>" method="post">
             <div class="input-group">
                 <label for="email">Adresse Email :</label>
                 <input type="email" id="email" name="email" required>

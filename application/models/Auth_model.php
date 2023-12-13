@@ -29,8 +29,30 @@ class Auth_model extends CI_Model {
         return $query->row()->id;
     }
 
+
+
+    
     public function register_user($data) {
+        $login = strtolower(substr($data['prenom'], 0, 1) . $data['nom']);
+    
+        $login_exists = true;
+        $count = 1;
+        while ($login_exists) {
+            $existing_user = $this->db->get_where('utilisateur', ['login' => $login])->row();
+            if (!$existing_user) {
+                $login_exists = false;
+            } else {
+                $login = strtolower(substr($data['prenom'], 0, 1) . $data['nom'] . $count);
+                $count++;
+            }
+        }
+    
+        $data['login'] = $login;
+    
+        $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
+    
         $this->db->insert('utilisateur', $data);
     }
+    
 
 }

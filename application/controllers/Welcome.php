@@ -17,14 +17,38 @@ class Welcome extends CI_Controller {
       $this->load->view('header');
 
 
-      $data['produitlist']=$this->Internships_model->get_produits();
+
+      /* LE CATALOGUE */
+
+  /*  $data['produitlist']=$this->Internships_model->get_produits();
       $data['title']='home';
       $data['content']='produit_list';
       $this->load->vars($data );
       $this->load->view('catalogue'); 
+ */
 
 
-      /* $this->load->view('accueil'); */
+
+
+   /* LE FORMULAIRE D'INSCRIPTION (il marche ca ajoute bien dans la bdd mais ne redirige pas au bon endroit) */
+
+       $this->load->view('register'); 
+
+
+      /* LE FORMULAIRE DE CONNEXION (on peut se connecter avec les utilisateurs de la BDD)*/
+
+      // $this->load->view('connexion');
+
+
+
+
+
+
+      /* L'ACCUEIL */
+
+      /*
+       $this->load->view('accueil');
+      */
 
 
       
@@ -39,6 +63,7 @@ class Welcome extends CI_Controller {
          
          
      }
+
 
 
 }
