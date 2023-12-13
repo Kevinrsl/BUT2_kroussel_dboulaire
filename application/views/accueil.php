@@ -4,48 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 2.5rem;
-    }
-
-    h1{
-      font-size: 30px;
-    }
-
-    p {
-      font-size: 24px;
-      text-align: center;
-    }
-
-    .annonce {
-      width: 100%;
-      height: 20rem;
-      border-radius: 3rem;
-    }
-
-    .categories {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-    }
-
-    .sous-cat-container {
-      width: 21%;
-      height: 21%;
-      margin-bottom: 1rem;
-      margin-top: 1rem;
-      text-align: center;
-    }
-
-    .sous-cat {
-      width: 100%;
-      height: 23%;
-      border-radius: 3rem;
-    }
-  </style>
   <title>Catalogue</title>
+  <link rel="stylesheet" href="./css/accueil.css">
 </head>
 <body>
 
