@@ -1,155 +1,763 @@
-/* reservation.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-.progress-bar {
+.reservation {
+    background-color: #ffffff;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.step-number {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.step-text {
-    font-size: 16px;
-    text-align: center;
-}
-
-.progress-bar-line {
-    flex: 1;
-    height: 2px;
-    background-color: #007bff;
-    margin: 0 10px;
-}
-
-.completed {
-    color: #007bff;
-}
-
-.back-link {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    text-decoration: none;
-    color: #007bff;
-}
-
-
-@font-face {
-    font-family: "Inter";
-    src:
-      url("./typos/Inter-Bold.ttf") format('truetype')
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
   }
   
-@font-face {
-    font-family: "Neuton";
-    src:
-      url("./typos/Neuton-ExtraLight.ttf") format('truetype')
+  .reservation .div {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 1440px;
+    height: 1024px;
+    position: relative;
   }
-
-
-/* Styles pour la barre de navigation */
-body {
-    margin: 0; /* Supprimer la marge par défaut du corps de la page */
-    padding: 0;
-    font-family: 'Neuton';
-}
-
-.navbar {
-    background-color: #fdfdfd; /* Couleur de fond de la navbar */
-    position: fixed;
+  
+  .reservation .overlap {
+    display: flex;
+    width: 90%;
+    height: 10%;
+    margin-left: 20rem;
+    margin-right: 20rem;
+  }
+  
+  .reservation .overlap-group {
+    position: absolute;
+    width: 1209px;
+    height: 110px;
     top: 0;
-    width: 100%;
-    z-index: 1;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); /* Ajout de l'ombre en bas de la navbar */
-    font-family: 'Inter';
-
-}
-
-/* Styles pour la partie supérieure de la navbar */
-.top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.logo img {
-    max-height: 50px; /* Ajustez la taille du logo selon vos besoins */
-}
-
-.search-bar {
-    background-color: rgba(0, 212, 153, 0.2);
-    border-radius: 20px;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    margin: 0 80px; /* Marge entre les icônes et le bloc de recherche */
-}
-
-.search-bar input {
-    flex: 1;
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(0, 212, 153, 0.01);
-    border-radius: 5px;
-}
-
-.search-button {
-    background: none;
-    border: none;
-    margin: 0 5px; /* Marge entre le bouton et le champ de recherche */
-}
-
-.search-button img {
-    max-height: 20px; /* Ajustez la taille de l'icône de loupe selon vos besoins */
-}
-
-.icons img {
-    max-height: 33px; /* Ajustez la taille des icônes selon vos besoins */
-    padding: 5px;
-    padding-right: 40px;
-}
-
-/* Styles pour la partie inférieure de la navbar */
-.bottom-bar {
-    display: flex;
-    justify-content: space-around;
-    padding: 2px 0;
-}
-
-.category {
+    left: 0;
+  }
+  
+  .reservation .rectangle {
+    position: absolute;
+    width: 236px;
+    height: 16px;
+    top: 32px;
+    left: 71px;
+    background-color: #00d49933;
+  }
+  
+  .reservation .rectangle-2 {
+    position: absolute;
+    width: 252px;
+    height: 16px;
+    top: 32px;
+    left: 346px;
+    background-color: #00d49933;
+  }
+  
+  .reservation .rectangle-3 {
+    position: absolute;
+    width: 216px;
+    height: 16px;
+    top: 32px;
+    left: 621px;
+    background-color: #00d49933;
+  }
+  
+  .reservation .rectangle-4 {
+    position: absolute;
+    width: 247px;
+    height: 16px;
+    top: 32px;
+    left: 896px;
+    background-color: #00d49933;
+  }
+  
+  .reservation .ellipse {
+    left: 0;
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 0;
+    background-color: #5f708a;
+    border-radius: 39.5px;
+  }
+  
+  .reservation .ellipse-2 {
+    left: 275px;
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 0;
+    background-color: #5f708a;
+    border-radius: 39.5px;
+  }
+  
+  .reservation .ellipse-3 {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 0;
+    left: 550px;
+    background-color: #5f708a;
+    border-radius: 39.5px;
+  }
+  
+  .reservation .ellipse-4 {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 0;
+    left: 825px;
+    background-color: #5f708a;
+    border-radius: 39.5px;
+  }
+  
+  .reservation .ellipse-5 {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    top: 0;
+    left: 1100px;
+    background-color: #5f708a;
+    border-radius: 39.5px;
+  }
+  
+  .reservation .text-wrapper {
+    left: 32px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-2 {
+    left: 307px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-3 {
+    left: 582px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-4 {
+    left: 857px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-5 {
+    left: 1132px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-6 {
+    left: 304px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-7 {
+    left: 579px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-8 {
+    left: 854px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-9 {
+    left: 1129px;
+    position: absolute;
+    top: 19px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-10 {
+    position: absolute;
+    top: 86px;
+    left: 1080px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-11 {
+    position: absolute;
+    top: 83px;
+    left: 8px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-12 {
+    position: absolute;
+    top: 83px;
+    left: 234px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-13 {
+    position: absolute;
+    top: 83px;
+    left: 551px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-14 {
+    position: absolute;
+    top: 85px;
+    left: 818px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-15 {
+    position: relative;
+    top: 4rem;
+    left: 68%;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .overlap-2 {
+    position: relative;
+    left: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .reservation .img {
+    position: absolute;
+    width: 895px;
+    height: 290px;
+    top: 0;
+    left: 0;
+    border-radius: 5rem;
+  }
+  
+  .reservation .rectangle-5 {
+    position: absolute;
+    width: 895px;
+    height: 83px;
+    top: 211px;
+    left: 0;
+    background-color: #00d399;
+    border-radius: 0px 0px 75px 75px;
+  }
+  
+  .reservation .text-wrapper-16 {
+    position: absolute;
+    top: 232px;
+    left: 344px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .overlap-3 {
+    position: relative;
+    top: 3rem;
+    width: 31%;
+    height: 462px;
+    left: 68%;
+    background-color: #fdfdff;
+    border-radius: 3px;
+    box-shadow: 0px 12px 31px #00000040;
+  }
+  
+  .reservation .rectangle-6 {
+    position: absolute;
+    width: 370px;
+    height: 5px;
+    top: 212px;
+    left: 36px;
+    background-color: #00d49933;
+  }
+  
+  .reservation .div-wrapper {
+    position: absolute;
+    width: 370px;
+    height: 79px;
+    top: 348px;
+    left: 36px;
+    background-color: #058c42;
+    border-radius: 3px;
+  }
+  
+  .reservation .text-wrapper-17 {
+    position: absolute;
+    top: 19px;
+    left: 114px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #fdfdff;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-18 {
+    position: absolute;
+    top: 248px;
+    left: 22px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-19 {
+    position: absolute;
+    top: 35px;
+    left: 72px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-20 {
+    position: absolute;
+    top: 35px;
+    left: 226px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-21 {
+    position: absolute;
+    top: 248px;
+    left: 330px;
+    font-family: "Inter-Black", Helvetica;
+    font-weight: 900;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-22 {
+    position: absolute;
+    top: 260px;
+    left: 111px;
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-weight: 200;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .pour-une-r-servation {
+    position: absolute;
+    width: 397px;
+    top: 105px;
+    left: 22px;
+    font-family: "Inter-ExtraLight", Helvetica;
+    font-weight: 400;
+    color: #5f708a;
+    font-size: 20px;
     text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .span {
+    font-weight: 200;
+  }
+  
+  .reservation .text-wrapper-23 {
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+  }
+  
+  .reservation .rectangle-7 {
+    position: absolute;
+    width: 86px;
+    height: 49px;
+    top: 31px;
+    left: 130px;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: #058c42;
+  }
+  
+  .reservation .rectangle-8 {
+    position: absolute;
+    width: 86px;
+    height: 49px;
+    top: 31px;
+    left: 276px;
+    border-radius: 2px;
+    border: 2px solid;
+    border-color: #058c42;
+  }
+  
+  .reservation .overlap-4 {
+    position: relative;
+    top: -10rem;
+    left: 1px;
 }
 
-.category img {
-    max-height: 40px; /* Ajustez la taille des icônes de catégorie selon vos besoins */
-}
-
-.category p {
-    margin: 5px 0;
+  
+  .reservation .DOMYOS-RAMEUR {
+    position: absolute;
+    width: 802px;
+    top: 0;
+    left: 66px;
+    font-family: "Neuton-Bold", Helvetica;
+    font-weight: 400;
+    color: #011936;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .text-wrapper-24 {
+    font-weight: 700;
+  }
+  
+  .reservation .text-wrapper-25 {
+    font-family: "Neuton-Light", Helvetica;
+    font-weight: 300;
+  }
+  
+  .reservation .text-wrapper-26 {
+    position: absolute;
+    width: 844px;
+    top: 146px;
+    left: 65px;
+    font-family: "Neuton-Light", Helvetica;
+    font-weight: 300;
+    color: #5f708aa1;
+    font-size: 26px;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .reservation .ellipse-6 {
+    position: absolute;
+    width: 141px;
+    height: 141px;
+    top: 96px;
+    left: 0;
+  }
+  
+  .reservation .icon-headset {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 125px;
+    left: 35px;
+  }
+  
+  .reservation .overlap-5 {
+    position: absolute;
+    width: 1671px;
+    height: 203px;
+    top: 0;
+    left: -235px;
+    background-color: #ffffff;
+    box-shadow: 0px -2px 31px #00000040;
+  }
+  
+  .reservation .emoji-running-shoe {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 104px;
+    left: 1471px;
+  }
+  
+  .reservation .icon-bike-bicycle {
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    top: 100px;
+    left: 898px;
+  }
+  
+  .reservation .icon-treadmill {
+    position: absolute;
+    width: 49px;
+    height: 50px;
+    top: 98px;
+    left: 626px;
+  }
+  
+  .reservation .icon-fitness-outline {
+    position: absolute;
+    width: 62px;
+    height: 53px;
+    top: 98px;
+    left: 342px;
+  }
+  
+  .reservation .icon-equipment-gym {
+    position: absolute;
+    width: 59px;
+    height: 53px;
+    top: 100px;
+    left: 1188px;
+  }
+  
+  .reservation .overlap-6 {
+    position: absolute;
+    width: 913px;
+    height: 56px;
+    top: 16px;
+    left: 401px;
+    background-color: #00d39933;
+    border-radius: 20px;
+  }
+  
+  .reservation .text-wrapper-27 {
+    position: absolute;
+    top: 15px;
+    left: 48px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a4f;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-28 {
+    position: absolute;
+    top: 158px;
+    left: 345px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
     color: #5f708a;
-}
-
-.category a {
-    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-29 {
+    position: absolute;
+    top: 162px;
+    left: 1437px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
     color: #5f708a;
-}
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-30 {
+    position: absolute;
+    top: 165px;
+    left: 1157px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-31 {
+    position: absolute;
+    top: 163px;
+    left: 905px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .text-wrapper-32 {
+    position: absolute;
+    top: 163px;
+    left: 573px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .icon-profile-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 11px;
+    left: 1561px;
+  }
+  
+  .reservation .group {
+    position: absolute;
+    width: 130px;
+    height: 38px;
+    top: 20px;
+    left: 255px;
+  }
+  
+  .reservation .text-wrapper-33 {
+    position: absolute;
+    width: 92px;
+    top: 1px;
+    left: 36px;
+    font-family: "Inter-Bold", Helvetica;
+    font-weight: 700;
+    color: #5f708a;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  
+  .reservation .icon-stethoscope {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+  }
+  
+  .reservation .icon-question-circle {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 11px;
+    left: 1449px;
+  }
+  
+  .reservation .icon-cart {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 18px;
+    left: 1342px;
+  }
+  
+  .reservation .overlap-7 {
+    position: absolute;
+    width: 47px;
+    height: 82px;
+    top: 264px;
+    left: 38px;
+  }
+  
+  .reservation .line {
+    top: 0;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 0;
+  }
+  
+  .reservation .line-2 {
+    top: 36px;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: 0;
+  }
+  
