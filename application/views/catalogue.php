@@ -15,7 +15,7 @@
                 <div class="price"><?= $p['prix_location'] ?> €</div>
                 <div class="type"><?= $p['type'] ?></div>
                 <div class="etat"><?= $p['etat'] ?></div>
-                <!-- Ajoutez d'autres champs si nécessaire -->
+                <img src="<?= base_url('/img/imgdica/'.$p['id'].'.png') ?>" alt="<?= $p['modele'] ?>" class="img">
                 <a href="<?= base_url('index.php/welcome/produit_details/'.$p['id']) ?>"><button class="rent-button">Voir l'annonce</button></a>
             </div>
         <?php endforeach ?>

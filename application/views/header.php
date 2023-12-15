@@ -10,7 +10,8 @@
 <div class="navbar">
             <div class="top-bar">
                 <div class="logo">
-                    <a href="accueil.php">
+                
+                    <a href="<?= base_url('index.php/welcome/accueil') ?>">
                         <img src="../img/totalite.svg" alt="Logo">
                     </a>
                 </div>
@@ -21,7 +22,7 @@
                     </button>
                 </div>
                 <div class="icons">
-                    <a href="reservation.php">
+                    <a href="<?= base_url('index.php/welcome/reservation') ?>">
                         <img src="../img/panier.svg" alt="Panier">
                     </a>
                     <a href="aide.php">
@@ -34,31 +35,31 @@
             </div>
             <div class="bottom-bar">
                 <div class="category">
-                    <a href="catalogue_sante.php">
+                    <a href="<?= base_url('index.php/welcome/catalogue') ?>">
                         <img src="../img/sante.svg" alt="Santé">
                         <p>Santé</p>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="catalogue-tapis.php">
+                    <a href="<?= base_url('index.php/welcome/catalogue') ?>">
                         <img src="../img/tapis.svg" alt="Tapis de course">
                         <p>Tapis de course</p>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="catalogue-vélo.html">
+                    <a href="<?= base_url('index.php/welcome/catalogue') ?>">
                         <img src="../img/velo.svg" alt="Vélos">
                         <p>Vélos</p>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="catalogue-muscu.html">
+                    <a href="<?= base_url('index.php/welcome/catalogue') ?>">
                         <img src="../img/muscu.svg" alt="Musculation">
                         <p>Musculation</p>
                     </a>
                 </div>
                 <div class="category">
-                    <a href="catalogue-protection.html">
+                    <a href="<?= base_url('index.php/welcome/catalogue') ?>">
                         <img src="../img/protection.svg" alt="Protection">
                         <p>Protection</p>
                     </a>

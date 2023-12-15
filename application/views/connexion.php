@@ -10,11 +10,8 @@
 
 <body>
     <div class="login-container">
-        <!-- Your existing HTML content -->
 
         <form action="<?= base_url('index.php/Auth/index'); ?>" method="post">
-            <!-- Add appropriate form fields for login -->
-            <!-- For example: -->
             <div class="input-group">
                 <label for="login">Nom d'utilisateur</label>
                 <input type="login" id="login" name="login" required>

@@ -6,6 +6,8 @@ class Auth extends CI_Controller {
         $this->load->view('header');
         $this->load->model('auth_model');
         $this->load->model('internships_model');
+        $this->config->load('custom_config');
+        
     }
     
 
@@ -31,11 +33,42 @@ class Auth extends CI_Controller {
             $data['error'] = 'Identifiants incorrects';
             $this->load->view('login', $data);
         }
+
+            
+           
+                   
     }
 
-    public function login() {
+    private function chargerAccueil() {
+        $data['produits'] = $this->Internships_model->get_produit();
+        $data['title'] = 'accueil';
+        $data['username'] = $this->session->userdata('username');
+        $data['type_utilisateur'] = $this->session->userdata('type_utilisateur');
+        $this->load->vars($data );
+        $type_utilisateur = $this->session->userdata('type_utilisateur');
+        if ($type_utilisateur == 'admin') {
+        $this->load->view('accueil_admin');
+        } elseif ($type_utilisateur == 'client') {
+        $this->load->view('accueil');
+        }
+        }
 
+    public function accueil() {
+        if ($this->session->has_userdata('username')) {
+            $type_utilisateur = $this->session->userdata('type_utilisateur');
+            if ($type_utilisateur == 'admin') {
+            $this->load->view('accueil_admin');
+            } elseif ($type_utilisateur == 'client') {
+            $this->chargerAccueil();
+            }
+            
+            } else {
+            redirect('Auth/connexion');
+        }
     }
+
+
+
 
 
 
@@ -55,7 +88,7 @@ class Auth extends CI_Controller {
 
         $data = array(
             'email' => $this->input->post('email'),
-            'password' => password_hash($this->input->post('password'), PASSWORD_DEFAULT),
+            'password' => md5($this->input->post('password')),
             'nom' => $this->input->post('nom'),
             'prenom' => $this->input->post('prenom'),
             'ddn' => $this->input->post('ddn'),
@@ -84,4 +117,16 @@ class Auth extends CI_Controller {
         $this->session->sess_destroy();
         redirect('auth'); // rediriger vers la page de connexion après la déconnexion
     }
+
+
+
+    public function accueil_admin() {
+        $this->load->model('Utilisateur_model');
+        $data['utilisateur'] = $this->Utilisateur_model->get_utilisateurs(); 
+        $this->load->view('accueil_admin', $data);
+        }
+
 }
+
+
+

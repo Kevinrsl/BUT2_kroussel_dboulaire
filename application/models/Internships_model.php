@@ -29,15 +29,15 @@
                 );
                 return $this->db->insert('produit',$data);
                 }
+
+
+
+                public function get_utilisateurs() {
+                    $query = $this->db->get('utilisateur');
+                    return $query->result_array();
+                }
+
     }
-
-
-
-        
-
-            
-
-            
 
 ?>
 

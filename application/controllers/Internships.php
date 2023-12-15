@@ -8,9 +8,7 @@
 
             public function index(){
                 $data['produitlist']=$this->Internships_model->get_produits();
-                // a title to display above the list
                 $data['title']='home';
-                // template will call 'task_list ' sub - view
                 $data['content']='produit_list';
                 $this->load->vars($data );
                 $this->load->view('home');

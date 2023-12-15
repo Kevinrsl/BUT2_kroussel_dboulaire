@@ -16,12 +16,9 @@
     <p>Marque: <?= $produit['marque'] ?></p>
     <p>Prix de location: <?= $produit['prix_location'] ?> €</p>
     <p>État: <?= $produit['etat'] ?></p>
-    <!-- Ajoutez d'autres champs si nécessaire -->
 
-    <!-- Utilisateur -->
     <div class="user-card">
         <div class="user-info">
-            <!-- Remplacez ces lignes par les informations réelles de l'utilisateur -->
             <img class="user-photo" src="img/User.png" alt="User Photo">
             <h2 class="user-name">Nom de l'utilisateur</h2>
             <div class="rating">
